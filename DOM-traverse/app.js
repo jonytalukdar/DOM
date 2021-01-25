@@ -15,5 +15,14 @@ let list = document.getElementById('list');
 // let li = document.querySelector('li');
 // console.log(li.nextElementSibling);
 
-console.log(list.firstElementChild);
-console.log(list.lastElementChild);
+// console.log(list.firstElementChild);
+// console.log(list.lastElementChild);
+
+let listItem = document.getElementsByTagName('li');
+// let newListItem = Array.from(listItem);
+// let newListItem = Array.prototype.slice.apply(listItem);
+let newListItem = [...listItem];
+newListItem.forEach((li, ind) => {
+  let text = li.innerHTML;
+  li.innerHTML = `${ind + 1} ${text}`;
+});
