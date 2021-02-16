@@ -21,8 +21,25 @@
 // }, 2000);
 
 // // set attribute
-const items = document.getElementById('items');
-const lastItem = items.lastElementChild;
-// lastItem.setAttribute('id', 'last-one');
-lastItem.id = 'last-one';
-console.log(lastItem);
+// const items = document.getElementById('items');
+// const lastItem = items.lastElementChild;
+// // lastItem.setAttribute('id', 'last-one');
+// lastItem.id = 'last-one';
+// console.log(lastItem);
+
+//  style with js
+
+// const title = document.getElementById('title');
+// // title.classList = `text-center`;
+// // title.style.textTransform = 'uppercase';
+// // title.style.color = '#00f';
+// // title.style.fontSize = '4rem';
+
+// const styleObj = {
+//   background: 'black',
+//   fontSize: '30px',
+//   color: '#efefef',
+// };
+
+// const items = document.getElementById('items');
+// Object.assign(items.style, styleObj);
