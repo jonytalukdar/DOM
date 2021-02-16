@@ -43,3 +43,31 @@
 
 // const items = document.getElementById('items');
 // Object.assign(items.style, styleObj);
+
+const button = document.getElementById('btn');
+const lists = document.getElementById('items');
+
+button.addEventListener('click', () => {
+  const inputValue = document.getElementById('input').value;
+  const li = document.createElement('li');
+  li.innerText = inputValue;
+  li.classList = 'list-group-item';
+  lists.append(li);
+});
+
+//  event delegation problem
+
+// [...lists.children].forEach((li) => {
+//   li.onclick = function (e) {
+//     e.target.remove();
+//   };
+// });
+
+lists.addEventListener('click', function (e) {
+  //   console.log(this.contains(e.target));
+  e.target.remove();
+});
+
+// button.onclick = (e) => {
+//   alert('hey');
+// };
