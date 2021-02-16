@@ -19,3 +19,10 @@
 // setInterval(() => {
 //   firstItem.innerText = Math.random();
 // }, 2000);
+
+// // set attribute
+const items = document.getElementById('items');
+const lastItem = items.lastElementChild;
+// lastItem.setAttribute('id', 'last-one');
+lastItem.id = 'last-one';
+console.log(lastItem);
